@@ -335,8 +335,54 @@ input {
 }
 
 .section02-textblock__choose {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
     margin-top: 45px;
-    height: 13.5px; 
+    height: 13.5px;  
+}
+
+.textblock__choose {
+  display: flex;
+  align-items: center;
+  width: 41px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.arrow_left {
+  margin-right: 29px;
+  background: url('../images/arrow-left.svg');
+}
+
+.arrow_right {
+  background: url('../images/arrow-right.svg');
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.textblock__choose__points {
+  display: flex;
+  align-items: center;
+}
+
+.textblock__choose__point {
+  width: 10px;
+  height: 10px;
+  margin-right: 17px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.textblock__choose__point:hover {
+  background:#ffffff;
 }
 
 .imageblock-navigation {
@@ -424,6 +470,10 @@ input {
         line-height: 138.6%;
      }
 
+    .section02-textblocks {  
+        margin-top: 36px;
+    }
+
      .section02-headline__min {
         height: 20px;
         width: fit-content;
@@ -472,7 +522,16 @@ input {
     width: 119px;
     justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.section03-logo_heading_line {
+    display: block;
+    position: relative;
+    background-color: #E3B873; 
+    height: 1.54px;
+    width: 32px;
+    margin: 10px;
 }
 
 .section03-video {
@@ -602,7 +661,7 @@ input {
     }
     
     .section03-content {
-    	margin-top:0;
+    	margin-top:-80px;
         padding-bottom: 54px;
         position: relative;
     }
@@ -799,6 +858,7 @@ input {
 @media (max-width:1300px) {
     .section04-content {
         height: 2030px;
+        text-align: center;
     }
 
     .section04-ccontent {
@@ -971,7 +1031,7 @@ input {
 /* Шестой блок */
 
 .section06 {
-    background-image: url(../img/section06-back.png);
+    background-image: url(../images/section06-back.png);
     background-size: cover;
     padding-top: 140px;
     position: relative;
@@ -1061,12 +1121,12 @@ input {
     .section06 {
         background-image: none;
         position: relative;
-        
     }
 
     .section06-mob {
-        margin-top: -200px;
-    }
+        margin-top: -380px;
+        z-index: 3;
+    } 
 
     .section06-headline__mob {
         font-size: 22px;
@@ -1312,7 +1372,7 @@ input {
         height: 1216px;
         background-color: #000000;
         background-image: none;
-        z-index: -3;
+        z-index: 2;
         padding-top: 150px;
         margin-top: -148px;
     }
